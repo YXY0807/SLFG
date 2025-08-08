@@ -2,7 +2,7 @@
 
 Follow these steps to set up the project environment.
 
-This project uses `LLaVA-Video` and ` LLaVA-OneVision` as its base model, which requires the environment setup of [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT). Please follow these steps **before** running our pipeline:
+This project uses `LLaVA-Video` and `LLaVA-OneVision` as its base model, which requires the environment setup of [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT). Please follow these steps **before** running our pipeline:
 
 ### 0. Install LLaVA-NeXT
 
