@@ -138,7 +138,7 @@ def run_llava_inference(question, candidates, video_frames, model, tokenizer, im
 
     options_str = " ".join([f"{chr(65 + i)}. {c}" for i, c in enumerate(candidates)])
     prompt_text = (
-        f"Select the best answer to the following multiple-choice question based on the video. "
+        f"Select the best answer to the following multiple-choice question based on the video and the given information. "
         f"Respond with only the letter (A, B, C, or D) of the correct option.\n\n"
         f"Question: {question}\n{options_str}"
     )
@@ -189,7 +189,6 @@ def main(args):
     results = []
     errors = []
 
-    # (Simulation) Get video durations, may need real data in a real scenario
     video_durations = {}
 
     for item in tqdm(match_data, desc="Performing reorganization and inference"):
